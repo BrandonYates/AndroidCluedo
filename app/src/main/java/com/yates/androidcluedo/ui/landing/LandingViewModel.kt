@@ -1,4 +1,4 @@
-package com.yates.androidcluedo.activity.ui.landing
+package com.yates.androidcluedo.ui.landing
 
 import androidx.lifecycle.ViewModel
 

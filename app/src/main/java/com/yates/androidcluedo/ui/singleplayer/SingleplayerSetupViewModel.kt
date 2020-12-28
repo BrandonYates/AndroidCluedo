@@ -1,4 +1,4 @@
-package com.yates.androidcluedo.activity.ui.singleplayer
+package com.yates.androidcluedo.ui.singleplayer
 
 import androidx.lifecycle.ViewModel
 

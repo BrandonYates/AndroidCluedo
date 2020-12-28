@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_board"
-        android:name="com.yates.androidcluedo.activity.ui.board.BoardFragment"
+        android:name="com.yates.androidcluedo.ui.board.BoardFragment"
         android:label="@string/title_board"
         tools:layout="@layout/fragment_hand" />
 
     <fragment
         android:id="@+id/navigation_hand"
-        android:name="com.yates.androidcluedo.activity.ui.hand.HandFragment"
+        android:name="com.yates.androidcluedo.ui.hand.HandFragment"
         android:label="@string/title_hand"
         tools:layout="@layout/fragment_board" />
 
     <fragment
         android:id="@+id/navigation_notes"
-        android:name="com.yates.androidcluedo.activity.ui.notes.NotesFragment"
+        android:name="com.yates.androidcluedo.ui.notes.NotesFragment"
         android:label="@string/title_notes"
         tools:layout="@layout/fragment_notes" />
 </navigation>

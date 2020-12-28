@@ -1,11 +1,11 @@
-package com.yates.androidcluedo.activity.ui.landing
+package com.yates.androidcluedo.ui.landing
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProviders
+import androidx.fragment.app.viewModels
 import com.yates.androidcluedo.R
 
 class LandingFragment : Fragment() {
@@ -15,7 +15,7 @@ class LandingFragment : Fragment() {
             LandingFragment()
     }
 
-    private lateinit var viewModel: LandingViewModel
+    private val viewModel: LandingViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +26,6 @@ class LandingFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(LandingViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

@@ -1,4 +1,4 @@
-package com.yates.androidcluedo.activity.ui.board
+package com.yates.androidcluedo.ui.board
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

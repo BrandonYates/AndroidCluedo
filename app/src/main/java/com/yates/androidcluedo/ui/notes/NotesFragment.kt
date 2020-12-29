@@ -21,7 +21,7 @@ class NotesFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_notes, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
-        notesViewModel.text.observe(this, Observer {
+        notesViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

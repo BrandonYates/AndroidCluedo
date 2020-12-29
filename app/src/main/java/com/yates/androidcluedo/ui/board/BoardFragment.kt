@@ -21,7 +21,7 @@ class BoardFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_board, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
-        boardViewModel.text.observe(this, Observer {
+        boardViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

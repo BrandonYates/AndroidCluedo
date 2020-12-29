@@ -1,17 +1,19 @@
 package com.yates.androidcluedo.database.game
 
 import androidx.room.ColumnInfo
-import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "instance")
-data class Instance(
+@Entity(tableName = "piece")
+data class Piece(
     @PrimaryKey
-    @ColumnInfo(name = "instanceId")
+    @ColumnInfo(name = "pieceId")
     val id: UUID,
 
-    @Embedded
-    val board: Board
+    @ColumnInfo(name = "pieceX")
+    val x: Int,
+
+    @ColumnInfo(name = "pieceY")
+    val y: Int
 )

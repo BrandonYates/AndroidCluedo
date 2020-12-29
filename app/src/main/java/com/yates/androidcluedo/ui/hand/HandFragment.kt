@@ -21,7 +21,7 @@ class HandFragment : Fragment() {
     ): View? {
         val root = inflater.inflate(R.layout.fragment_hand, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        handViewModel.text.observe(this, Observer {
+        handViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

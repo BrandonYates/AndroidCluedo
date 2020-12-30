@@ -10,16 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/titleId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cluedoTitle"
-            android:textSize="64sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/singleplayerBtn"
             android:layout_width="wrap_content"
@@ -28,7 +18,7 @@
             android:text="@string/singleplayer"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleId" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/multiplayerBtn"

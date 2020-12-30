@@ -1,4 +1,0 @@
-package datamodel
-
-class SingleplayerGameSetup {
-}

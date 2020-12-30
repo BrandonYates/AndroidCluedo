@@ -6,6 +6,7 @@ import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
 import com.yates.androidcluedo.R
+import com.yates.androidcluedo.ui.landing.LandingFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
+        }
+
+        supportFragmentManager.also { fm ->
+            fm.beginTransaction().also { transaction ->
+                transaction.replace(R.id.contentFragment, LandingFragment.newInstance())
+                transaction.addToBackStack("landing_fragment")
+                transaction.commit()
+            }
         }
     }
 
